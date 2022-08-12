@@ -1,0 +1,36 @@
+.mobile-nav {
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: -100%;
+    transition: all 0.5s ease;
+
+    .first-container {
+        padding-bottom: 30px;
+        border-bottom: 1px solid black;
+    }
+
+    ul {
+        list-style: none;
+
+        li {
+            padding: 8px 0 15px 0;
+            border-bottom: 1px solid black;
+        }
+    }
+
+    .btn-div {
+        margin-top: 30px;
+
+        button {
+            width: 100%;
+            padding: 8px;
+        }
+
+    }
+}
+
+.navOn {
+    left: 0;
+}
