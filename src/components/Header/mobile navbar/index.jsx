@@ -2,7 +2,7 @@ import './style.scss';
 import LogoImg from '../../../assets/images/WeFresh_logo.png';
 import { ReactComponent as Close } from '../../../assets/svgs/Close.svg'
 
-function MobileNav({ showNav, setShowNav, list, setzIndex }) {
+function MobileNav({ showNav, setShowNav, list }) {
 
   const signUp = () => {
     setShowNav(!showNav);
@@ -16,12 +16,12 @@ function MobileNav({ showNav, setShowNav, list, setzIndex }) {
           <img src={LogoImg} alt="" />
         </div>
         <div>
-          <button onClick={() => {setShowNav(!showNav); setzIndex(true)}}><Close /></button>
+          <button onClick={() => setShowNav(!showNav)}><Close /></button>
         </div>
       </div>
       <div>
         <ul>
-          {list.map((v, i) => <li key={i} onClick={() => {setShowNav(!showNav); setzIndex(true)}}>{v}</li>)}
+          {list.map((v, i) => <li key={i} onClick={() => setShowNav(!showNav)}>{v}</li>)}
         </ul>
       </div>
       <div className='btn-div'>

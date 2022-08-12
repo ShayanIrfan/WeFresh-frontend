@@ -1,7 +1,8 @@
 .header {
     padding: 20px;
     position: relative;
-    z-index: 1;
+    z-index: 2;
+    background-color: #96D5F0;
 
     img {
         width: 85px;
@@ -17,7 +18,11 @@
         display: none;
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 520px) {
+        background-color: transparent;
+    }
+
+    @media (min-width: 781px) {
         img {
             width: 100px;
         }

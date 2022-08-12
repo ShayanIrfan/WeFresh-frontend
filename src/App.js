@@ -9,12 +9,10 @@ import { useState } from 'react';
 
 function App() {
 
-  const [zIndex, setzIndex] = useState(true); 
-
   return (
     <div className="App">
-      <Header setzIndex={setzIndex} />
-      <Home zIndex={zIndex}/>
+      <Header />
+      <Home />
       <Footer />
     </div>
   );

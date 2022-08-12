@@ -1,11 +1,13 @@
 .Hero {
     text-align: center;
-    padding: 55px 0;
+    padding: 22px 0 55px 0;
     flex-wrap: wrap;
     position: relative;
+    z-index: 1;
 
     @media (min-width: 491px) {
         flex-direction: column;
+        padding: 25px 0 55px 0;
     }
 
     @media (min-width: 781px) {
