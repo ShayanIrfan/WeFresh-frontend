@@ -21,7 +21,7 @@ function MobileNav({ showNav, setShowNav, list, setzIndex }) {
       </div>
       <div>
         <ul>
-          {list.map((v, i) => <li key={i} onClick={() => setShowNav(!showNav)}>{v}</li>)}
+          {list.map((v, i) => <li key={i} onClick={() => {setShowNav(!showNav); setzIndex(true)}}>{v}</li>)}
         </ul>
       </div>
       <div className='btn-div'>
