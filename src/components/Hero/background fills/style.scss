@@ -1,0 +1,202 @@
+.bgFill {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    overflow-x: hidden;
+
+    .fill2 {
+        position: absolute;
+        bottom: 0;
+        left: 5%;
+    }
+
+    .fill3 {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .fill4 {
+        position: absolute;
+        right: 0;
+        top: 8%;
+    }
+
+    .fill5 {
+        position: absolute;
+        bottom: 0;
+        right: 8%;
+    }
+
+    @media (max-width: 1440px) {
+        .fill4 {
+            top: 5%;
+        }
+
+        .fill5 {
+            right: 5%;
+        }
+    }
+
+    @media (max-width: 1350px) {
+        .fill1 {
+            svg {
+                width: 700px;
+            }
+        }
+
+        .fill2 {
+            svg {
+                width: 550px;
+            }
+        }
+
+        .fill5 {
+            svg {
+                width: 390px;
+            }
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .fill1 {
+            margin-top: -50px;
+
+            svg {
+                width: 600px;
+            }
+        }
+
+        .fill2 {
+            svg {
+                width: 450px;
+            }
+        }
+
+        .fill5 {
+            svg {
+                width: 350px;
+            }
+        }
+    }
+
+    @media (max-width: 960px) {
+        .fill1 {
+            margin-top: -75px;
+
+            svg {
+                width: 550px;
+            }
+        }
+
+        .fill2 {
+            svg {
+                width: 400px;
+            }
+        }
+
+        .fill3 {
+            svg {
+                width: 400px
+            }
+        }
+
+        .fill4 {
+            svg {
+                width: 150px;
+            }
+        }
+
+        .fill5 {
+            svg {
+                width: 300px;
+            }
+        }
+    }
+
+    @media (max-width: 870px) {
+        .fill5 {
+            right: 2%;
+        }
+    }
+
+    @media (max-width: 780px) {
+
+        .fill1 {
+            margin-top: -125px;
+            width: 100%;
+
+            svg {
+                transform: rotate(90deg);
+                width: 100%;
+                /* margin: auto; */
+                margin-left: 65px;
+            }
+        }
+
+        .fill3 {
+            display: none;
+        }
+
+        .fill4 {
+            display: none;
+        }
+
+        .fill5 {
+            display: none;
+        }
+    }
+
+    @media (max-width: 736px) {
+        .fill1 {
+            svg {
+                height: 655px;
+            }
+        }
+    }
+
+
+    @media (max-width: 670px) {
+        .fill1 {
+            svg {
+                margin-left: 0px;
+            }
+        }
+    }
+
+    @media (max-width: 520px) {
+
+        .fill1 {
+            svg {
+                margin-left: -10%;
+            }
+        }
+
+        .fill2 {
+            left: 0;
+        }
+    }
+
+    @media (max-width: 425px) {
+
+        .fill1 {
+            svg {
+                margin-left: -5%;
+            }
+        }
+    }
+
+    @media (max-width: 375px) {
+        .fill1 {
+            margin-top: -130px;
+        }
+    }
+
+    // @media (max-width: 370px) {
+    //     .fill1 {
+    //         svg {
+    //             margin-left: -51%;
+    //         }
+    //     }
+    // }
+}

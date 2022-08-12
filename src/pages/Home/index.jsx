@@ -1,11 +1,11 @@
 import Hero from "../../containers/Home/Hero";
 import GotQuestions from "../../containers/Home/Got questions";
 
-function Home() {
+function Home({zIndex}) {
     return (
         <div className="Home">
             {/* <Header /> */}
-            <Hero />
+            <Hero zIndex={zIndex} />
             <GotQuestions />
         </div>
     );

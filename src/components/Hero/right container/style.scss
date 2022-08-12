@@ -1,7 +1,22 @@
 .right-container {
     margin-top: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
     img {
         width: 190px;
+        z-index: 1;
+    }
+
+    div {
+        position: absolute;
+        top: 0;
+        width: 338px;
+
+        svg {
+            width: 100%;
+        }
     }
 
     @media (min-width: 520px) {
@@ -13,6 +28,12 @@
     @media (min-width: 768px) {
         img {
             width: 280px
+        }
+    }
+
+    @media (min-width: 781px) {
+        div {
+            display: none;
         }
     }
 
