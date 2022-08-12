@@ -21,14 +21,14 @@ function Accordian({ gotQuestionsContent, setGotQuestionsContent }) {
 
     return (
         gotQuestionsContent.questions.map((v, i) =>
-            <div key={i}>
-                <div onClick={() => toShow(i)}>
+            <div className='accordian' key={i}>
+                <div className='question' onClick={() => toShow(i)}>
                     <p>{v.question}</p>
                 </div>
                 {v.show &&
-                    <div>
-                        <p>{v.answer.title}</p>
-                        <p>{v.answer.value}</p>
+                    <div className='ans-div'>
+                        <p className='heading'>{v.answer.title}</p>
+                        <p className='answer-para'>{v.answer.value}</p>
                     </div>
                 }
             </div >

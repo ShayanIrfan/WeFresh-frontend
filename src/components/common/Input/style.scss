@@ -1,0 +1,39 @@
+.input {
+    input {
+        padding: 12px;
+        outline: none;
+        /* border: none; */
+        border: 1px solid var(--greyish-for-border);
+        border-radius: 4px;
+        height: 35px;
+        margin-right: 10px;
+        background-color: var(--white);
+        color: var(--black);
+    }
+
+    ::placeholder {
+        font-size: 15px;
+        color: var(--grey);
+    }
+
+    button {
+        width: 100px;
+        outline: none;
+        border: none;
+        border-radius: 4px;
+        height: 35px;
+        font-size: 15px;
+        background-color: var(--button-color);
+        color: var(--black);
+    }
+
+    @media (min-width: 768px) { 
+        input {
+            width: 70%;
+        }
+
+        button {
+            width: 25%;
+        }
+    }
+}

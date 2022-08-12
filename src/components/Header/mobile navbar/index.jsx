@@ -1,4 +1,6 @@
 import './style.scss';
+import LogoImg from '../../../assets/images/WeFresh_logo.png';
+import { ReactComponent as Close } from '../../../assets/svgs/Close.svg'
 
 function MobileNav({ showNav, setShowNav, list }) {
 
@@ -11,10 +13,10 @@ function MobileNav({ showNav, setShowNav, list }) {
     <div className={"mobile-nav" + (showNav ? " navOn" : "")}>
       <div className='flex-space-between first-container'>
         <div>
-          LOGO
+          <img src={LogoImg} alt="" />
         </div>
         <div>
-          <button onClick={() => setShowNav(!showNav)}>X</button>
+          <button onClick={() => setShowNav(!showNav)}><Close /></button>
         </div>
       </div>
       <div>

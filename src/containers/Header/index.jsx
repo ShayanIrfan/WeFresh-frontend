@@ -1,11 +1,18 @@
 import { useState } from 'react';
+import { useMediaQuery } from 'react-responsive';
 import './style.scss';
+import LogoImg from '../../assets/images/WeFresh_logo.png';
+import { ReactComponent as Hamburger } from '../../assets/svgs/Hamburger.svg'
 // Mobile Navbar
 import MobileNav from '../../components/Header/mobile navbar';
 // Desktop Navbar
 import DesktopNav from '../../components/Header/desktop navbar';
 
 function Header() {
+
+    const isDesktopOrLaptop = useMediaQuery({
+        query: '(min-width: 800px)'
+    });
 
     const [showNav, setShowNav] = useState(false);
 
@@ -14,12 +21,14 @@ function Header() {
     return (
         <div className="header">
             {/* <div className="flex-space-around"> */}
-            <div className="flex-space-between">
-                <div>LOGO</div>
-                {/* <DesktopNav list={navList} /> */}
-                <button onClick={() => setShowNav(!showNav)}>On</button>
+            <div className={isDesktopOrLaptop ? "flex-space-around" : "flex-space-between"}>
+                <div>
+                    <img src={LogoImg} alt="" />
+                </div>
+                <DesktopNav className="desktop-nav" list={navList} />
+                <button onClick={() => setShowNav(!showNav)}><Hamburger /></button>
             </div>
-            <MobileNav showNav={showNav} setShowNav={setShowNav} list={navList} />
+            <MobileNav className="mobile-nav" showNav={showNav} setShowNav={setShowNav} list={navList} />
         </div>
     );
 }

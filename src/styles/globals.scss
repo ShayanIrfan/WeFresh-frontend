@@ -1,3 +1,29 @@
+:root {
+    --blue: #68BAE3;
+    --white: #ffffff;
+    --light-blue: #F2F9FF;
+    --grey: #868E95;
+    --black: #14243C;
+    --greyish-for-border: #E8E8E8;
+    --button-color: #FFD476;
+}
+
+@font-face {
+    font-family: 'Prompt Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Prompt Regular'), url('Prompt-Regular.woff') format('woff');
+}
+
+p,
+h3,
+div,
+input,
+button,
+::placeholder {
+    font-family: 'Prompt Regular';
+}
+
 .flex-center {
     display: flex;
     justify-content: center;

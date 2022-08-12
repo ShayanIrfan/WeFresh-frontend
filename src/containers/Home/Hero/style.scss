@@ -1,3 +1,14 @@
 .Hero {
     text-align: center;
+    padding: 55px 0;
+    flex-wrap: wrap;
+
+    @media (min-width: 491px) {
+        flex-direction: column;
+    }
+
+    @media (min-width: 781px) {
+        text-align: left;
+        flex-direction: row;
+    }
 }

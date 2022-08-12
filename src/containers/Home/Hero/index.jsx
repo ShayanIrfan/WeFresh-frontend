@@ -5,7 +5,7 @@ import LeftContainer from "../../../components/Hero/left container";
 function Hero() {
 
     return (
-        <div className="Hero">
+        <div className="flex-center Hero">
             <LeftContainer />
             <RightContainer />
         </div>

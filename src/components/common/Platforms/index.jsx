@@ -1,16 +1,25 @@
 import './style.scss';
+import AppleLogo from '../../../assets/images/Apple.png';
+import GoogleplayLogo from '../../../assets/images/Googleplay.png';
+import GoogleplayWhiteLogo from '../../../assets/images/GoogleplayWhite.png';
 
-function Platforms({ playstore }) {
+function Platforms({ playstore, textColor }) {
 
     return (
         <div className="platforms">
-            <p>Available on</p>
+            <p style={{ color: textColor === "white" ? "#ffffff" : "#868E95" }}>Available on</p>
             <div className="flex-center">
-                <div className='first-logo'>LOGO</div>
+                <div className='first-logo'>
+                    <img src={AppleLogo} alt="AppleLogo" />
+                </div>
                 {playstore === "white" ?
-                    <div>LOGO</div>
+                    <div>
+                        <img src={GoogleplayWhiteLogo} alt="GoogleplayWhiteLogo" />
+                    </div>
                     :
-                    <div>LOGO Black</div>}
+                    <div>
+                        <img src={GoogleplayLogo} alt="GoogleplayLogof" />
+                    </div>}
             </div>
         </div>
     );

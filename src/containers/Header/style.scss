@@ -1,0 +1,35 @@
+.header {
+    padding: 20px;
+
+    img {
+        width: 85px;
+    }
+
+    button {
+        background: none;
+        outline: none;
+        border: none;
+    }
+
+    .desktop-nav {
+        display: none;
+    }
+
+    @media (min-width: 768px) {
+        img {
+            width: 100px;
+        }
+
+        .desktop-nav {
+            display: block;
+        }
+
+        button {
+            display: none;
+        }
+
+        .mobile-nav {
+            display: none;
+        }
+    }
+}

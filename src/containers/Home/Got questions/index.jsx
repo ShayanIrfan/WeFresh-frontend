@@ -7,7 +7,7 @@ function GotQuestions() {
 
     const [gotQuestionsContent, setGotQuestionsContent] = useState({
         heading: "Got questions?",
-        subHeading: "Perfect, we've got answers",
+        subHeading: "Perfect, we've got answers!",
         questions: [
             {
                 question: "How to get started?",
@@ -45,7 +45,7 @@ function GotQuestions() {
     });
 
     return (
-        <div>
+        <div className='got-questions'>
             <HeadingWithSub heading={gotQuestionsContent.heading} subHeading={gotQuestionsContent.subHeading} />
             <Accordian gotQuestionsContent={gotQuestionsContent} setGotQuestionsContent={setGotQuestionsContent} />
         </div>

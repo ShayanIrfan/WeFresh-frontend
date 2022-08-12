@@ -1,4 +1,5 @@
 import "./style.scss";
+import FooterLogo from '../../assets/images/WeFresh_footer_logo.png'
 // component import
 import Platforms from "../../components/common/Platforms";
 import FooterLinks from "../../components/common/FooterLinks";
@@ -22,12 +23,16 @@ function Footer() {
 
     return (
         <div className="Footer">
-            {/* <div className="flex-space-around first-container"> */}
             <div className="first-container">
-                <div>LOGO</div>
-                {footerLinks.map((v, i) => <FooterLinks key={i} heading={v.heading} links={v.links} />)}
-                <div>
-                    <Platforms />
+                {/* <div className="first-container"> */}
+                <div className="flex-space-around inner-first-container">
+                    <div className="logo-section">
+                        <img src={FooterLogo} alt="WeFreshLogo" />
+                    </div>
+                    {footerLinks.map((v, i) => <FooterLinks key={i} heading={v.heading} links={v.links} />)}
+                    <div className="platforms-section">
+                        <Platforms />
+                    </div>
                 </div>
             </div>
             <div className="copyright-section">
