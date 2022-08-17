@@ -2,7 +2,7 @@
     position: absolute;
     top: 0;
     width: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
 
     .fill2 {
         position: absolute;
@@ -129,7 +129,7 @@
             svg {
                 transform: rotate(90deg);
                 width: 100%;
-                margin-left: 65px;
+                margin-left: 50px;
             }
         }
 
@@ -155,7 +155,7 @@
     }
 
 
-    @media (max-width: 670px) {
+    @media (max-width: 655px) {
         .fill1 {
             svg {
                 margin-left: 0px;
