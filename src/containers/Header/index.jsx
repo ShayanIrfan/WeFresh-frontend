@@ -6,8 +6,13 @@ import { ReactComponent as Hamburger } from '../../assets/svgs/Hamburger.svg'
 import MobileNav from '../../components/Header/mobile navbar';
 // Desktop Navbar
 import DesktopNav from '../../components/Header/desktop navbar';
+import { useMediaQuery } from 'react-responsive';
 
 function Header() {
+
+    const applySpaceAround = useMediaQuery({
+        query: '(min-width: 521px)'
+    });
 
     const [showNav, setShowNav] = useState(false);
 
@@ -15,7 +20,7 @@ function Header() {
 
     return (
         <div className="header">
-            <div className="flex-space-around">
+            <div className={applySpaceAround ? "flex-space-around" : "flex-space-between"}>
                 <div>
                     <img src={LogoImg} alt="" />
                 </div>

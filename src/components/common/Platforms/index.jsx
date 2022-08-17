@@ -13,11 +13,11 @@ function Platforms({ playstore, textColor }) {
                     <img src={AppleLogo} alt="AppleLogo" />
                 </div>
                 {playstore === "white" ?
-                    <div>
+                    <div className='second-logo'>
                         <img src={GoogleplayWhiteLogo} alt="GoogleplayWhiteLogo" />
                     </div>
                     :
-                    <div>
+                    <div className='second-logo'>
                         <img src={GoogleplayLogo} alt="GoogleplayLogof" />
                     </div>}
             </div>

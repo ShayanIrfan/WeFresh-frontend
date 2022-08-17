@@ -24,6 +24,10 @@ button,
     font-family: 'Prompt Regular';
 }
 
+button {
+    cursor: pointer;
+}
+
 .flex-center {
     display: flex;
     justify-content: center;
