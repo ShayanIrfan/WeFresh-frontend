@@ -5,7 +5,6 @@ import Header from './containers/Header'
 // container import
 import Home from './pages/Home';
 import Footer from './containers/Footer';
-import { useState } from 'react';
 
 function App() {
 

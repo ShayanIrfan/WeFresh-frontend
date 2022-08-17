@@ -1,11 +1,6 @@
 import './style.scss';
 
-function HeadingWithSub ({heading, subHeading}) {
-
-    const GotQuestionContent = {
-        heading: "Got questions?",
-        subHeading: "Perfect, we've got answers"
-    }
+function HeadingWithSub({ heading, subHeading }) {
 
     return (
         <div className='headings'>
